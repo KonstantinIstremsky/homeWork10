@@ -1,15 +1,32 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        task1();
+        task2();
+        task3();
     }
-}
+    public static void task1(){
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.println("Ф. И. О. сотрудника — " + fullName);
+    }
+
+    public static void task2(){
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.println("Ф. И. О. сотрудника — " + fullName.toUpperCase());
+    }
+
+    public static void task3(){
+        String firstName = "Семен";
+        String middleName = "Семенович";
+        String lastName = "Иванов";
+        String fullName = lastName + " " + firstName + " " + middleName;
+        String fullNameTrue = fullName.replace("е", "ё");
+        System.out.println("Ф. И. О. сотрудника — " + fullNameTrue);
+    }
+    }
